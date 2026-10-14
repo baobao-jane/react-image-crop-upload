@@ -1,0 +1,63 @@
+{
+  "name": "react-image-crop-upload",
+  "version": "0.1.0",
+  "description": "React image cropper that returns an upload-ready File, resized and compressed under a size limit.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "keywords": [
+    "react",
+    "image",
+    "crop",
+    "cropper",
+    "upload",
+    "resize",
+    "compress"
+  ],
+  "scripts": {
+    "dev": "vite example",
+    "build": "tsup && node scripts/build-css.mjs",
+    "test": "vitest run",
+    "typecheck": "tsc"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "cropperjs": "^1.6.2",
+    "react-cropper": "^2.3.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.4"
+  }
+}

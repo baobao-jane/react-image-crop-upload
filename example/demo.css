@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #18181b;
+  background: #ffffff;
+}
+
+.demo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 640px;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+
+.demo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.demo-lead {
+  margin: 0;
+  color: #71717a;
+}
+
+.demo-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.demo-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: #52525b;
+}
+
+.demo-controls select,
+.demo-controls input {
+  height: 32px;
+  padding: 0 8px;
+  border: 1px solid #e4e4e7;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.demo-error {
+  margin: 0;
+  color: #ef4444;
+}
+
+.demo-result {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0;
+}
+
+.demo-result img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #e4e4e7;
+}
+
+.demo-button {
+  height: 32px;
+  padding: 0 14px;
+  border: 1px solid #e4e4e7;
+  border-radius: 6px;
+  background: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.demo-result figcaption {
+  font-size: 12px;
+  color: #71717a;
+}

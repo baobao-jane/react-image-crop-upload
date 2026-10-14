@@ -1,0 +1,94 @@
+.ricu-root {
+  --ricu-border: #e4e4e7;
+  --ricu-surface: #fafafa;
+  --ricu-stage: #f4f4f5;
+  --ricu-text: #3f3f46;
+  --ricu-muted: #71717a;
+  --ricu-accent: #18181b;
+  --ricu-accent-text: #ffffff;
+  --ricu-danger: #ef4444;
+  --ricu-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--ricu-border);
+  border-radius: var(--ricu-radius);
+  background: var(--ricu-surface);
+  color: var(--ricu-text);
+  font-size: 14px;
+}
+
+.ricu-guide {
+  margin: 0;
+  font-size: 12px;
+  color: var(--ricu-muted);
+}
+
+.ricu-ratios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ricu-ratio {
+  padding: 4px 12px;
+  border: 1px solid var(--ricu-border);
+  border-radius: 4px;
+  background: #ffffff;
+  color: var(--ricu-text);
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.ricu-ratio:hover {
+  background: var(--ricu-stage);
+}
+
+.ricu-ratio[data-active] {
+  border-color: var(--ricu-accent);
+  background: var(--ricu-accent);
+  color: var(--ricu-accent-text);
+}
+
+.ricu-stage {
+  overflow: hidden;
+  border-radius: calc(var(--ricu-radius) - 2px);
+  background: var(--ricu-stage);
+}
+
+.ricu-error {
+  margin: 0;
+  color: var(--ricu-danger);
+}
+
+.ricu-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.ricu-button {
+  height: 32px;
+  padding: 0 14px;
+  border: 1px solid var(--ricu-border);
+  border-radius: calc(var(--ricu-radius) - 2px);
+  background: #ffffff;
+  color: var(--ricu-text);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ricu-button--primary {
+  border-color: var(--ricu-accent);
+  background: var(--ricu-accent);
+  color: var(--ricu-accent-text);
+}
+
+.ricu-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
